@@ -1,0 +1,3 @@
+[submodule "src/env/gym_miniworld"]
+	path = src/env/gym_miniworld
+	url = https://github.com/liuqh16/Miniworld.git

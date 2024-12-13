@@ -1,0 +1,11 @@
+.vscode
+logs
+wandb
+
+test*
+path
+*.csv
+*.pdf
+*.png
+plot_*
+__pycache__

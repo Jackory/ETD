@@ -1,0 +1,31 @@
+CUDA_VISIBLE_DEVICES=$1 PYTHONPATH="./" xvfb-run -a -s "-screen 0 1024x768x24 -ac +extension GLX +render -noreset" python3 src/train.py \
+    --exp_name test \
+    --game_name=$2 \
+    --run_id=0 \
+    --int_rew_source=$3 \
+    --env_source=$4 \
+    --use_wandb=0 \
+    --int_rew_coef=1e-2 \
+    --ext_rew_coef=1.0 \
+    --model_learning_rate=1e-4 \
+    --ent_coef=1e-2 \
+    --max_grad_norm=0.5 \
+    --model_n_epochs=4 \
+    --use_model_rnn=0 \
+    --record_video=0 \
+    --enable_plotting=0 \
+    --model_mlp_layers=1 \
+    --total_steps=5_000_000 \
+    --image_noise_scale=0 \
+    --batch_size=512 \
+    --discount=0.99 \
+    --policy_cnn_type=-1 \
+    --model_cnn_type=-1 \
+    --n_steps=512 \
+    --num_processes=16 \
+    --features_dim=256 \
+    --model_features_dim=256 \
+    --model_cnn_norm=LayerNorm \
+    --model_mlp_norm=LayerNorm \
+    --policy_cnn_norm=LayerNorm \
+    --policy_mlp_norm=LayerNorm \
