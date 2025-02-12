@@ -1,6 +1,6 @@
 # About
 
-This repository implements **Episodic Novelty Through Temporal Distance(ETD)**, an exploration method for reinforcement learning that has been found to be particularly effective in Contextual MDPs(CMDP). More details can be found in the original paper([ICLR25 Under Review](https://openreview.net/pdf?id=I7DeajDEx7)). In case you are mainly interested in the implementation of ETD, its major components can be found at `src/algo/intrinsic_rewards/tdd.py.`
+This repository implements **Episodic Novelty Through Temporal Distance(ETD)**, an exploration method for reinforcement learning that has been found to be particularly effective in Contextual MDPs(CMDP). More details can be found in the original paper([ICLR 2025 Accepted](https://openreview.net/pdf?id=I7DeajDEx7)). In case you are mainly interested in the implementation of ETD, its major components can be found at `src/algo/intrinsic_rewards/tdd.py.` We also provide a reproduction of the temporal distance learning in maze, please refer to `maze/train_cmd1.py`. 
 
 # Install
 
@@ -23,6 +23,13 @@ pip install -e .
 ```
 
 ### Usage
+
+### Reproduce Temporal Distance Learning in Maze
+
+```bash
+cd maze
+python train_cmd1.py
+```
 
 ### Train ETD on MiniGrid
 
