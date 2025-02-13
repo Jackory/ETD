@@ -45,5 +45,16 @@ PYTHONPATH=./ python3 src/train.py \\
 
 We also provide scripts`(*.sh)` to run the experiments of our method. The hyperparameter setup can be found in our paper.
 
+### Citation
+If you find this repo useful, please cite our paper:
 
+````
+@inproceedings{
+jiang2025episodic,
+title={Episodic Novelty Through Temporal Distance},
+author={Yuhua Jiang and Qihan Liu and Yiqin Yang and Xiaoteng Ma and Dianyu Zhong and Hao Hu and Jun Yang and Bin Liang and Bo XU and Chongjie Zhang and Qianchuan Zhao},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=I7DeajDEx7}
+}
 
