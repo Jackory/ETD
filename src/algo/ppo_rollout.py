@@ -803,12 +803,8 @@ class PPORollout(BaseAlgorithm):
         total_timesteps, callback = self._setup_learn(
             total_timesteps, eval_env, callback, eval_freq, n_eval_episodes, eval_log_path, reset_num_timesteps, tb_log_name
         )
-        if self.env_source == EnvSrc.PandaGym:
-            self.ep_info_buffer = deque(maxlen=500)
-            self.ep_success_buffer = deque(maxlen=500)
-        else:
-            self.ep_info_buffer = deque(maxlen=100)
-            self.ep_success_buffer = deque(maxlen=100)
+        self.ep_info_buffer = deque(maxlen=100)
+        self.ep_success_buffer = deque(maxlen=100)
         self.total_timesteps = total_timesteps
         callback.on_training_start(locals(), globals())
 

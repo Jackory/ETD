@@ -10,11 +10,11 @@ import warnings
 import torch as th
 
 # noinspection PyUnresolvedReferences
-try:
-    from pyglet.canvas.xlib import NoSuchDisplayException
-    import gym_miniworld
-except NoSuchDisplayException as e:
-    raise ImportError('Please install `xvfb` to render the environment in a headless server')
+# try:
+#     from pyglet.canvas.xlib import NoSuchDisplayException
+#     import gym_miniworld
+# except NoSuchDisplayException as e:
+#     raise ImportError('Please install `xvfb` to render the environment in a headless server')
 from src.env.minigrid_envs import *
 from src.algo.ppo_model import PPOModel
 from src.algo.ppo_trainer import PPOTrainer
